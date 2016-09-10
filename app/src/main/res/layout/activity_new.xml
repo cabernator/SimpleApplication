@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.androidstudio.midtermactivity.NewActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:layout_marginTop="68dp"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:id="@+id/textView"
+        android:textSize="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/editTextUName"
+        android:hint="ENTER USERNAME"
+        android:textColor="#000000"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextPWord"
+        android:hint="ENTER PASSWORD"
+        android:textColor="#000000"
+        android:layout_below="@+id/editTextUName"
+        android:layout_alignLeft="@+id/editTextUName"
+        android:layout_alignStart="@+id/editTextUName"
+        android:layout_alignRight="@+id/editTextUName"
+        android:layout_alignEnd="@+id/editTextUName"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:id="@+id/buttonLogIn"
+        android:textColor="#000000"
+        android:layout_below="@+id/editTextPWord"
+        android:layout_alignLeft="@+id/editTextPWord"
+        android:layout_alignStart="@+id/editTextPWord"
+        android:layout_alignRight="@+id/editTextPWord"
+        android:layout_alignEnd="@+id/editTextPWord" />
+</RelativeLayout>
